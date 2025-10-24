@@ -43,6 +43,8 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
             containerColor = Color.DarkGray
         )
     )  {
+        Row {
 
+        }
     }
 

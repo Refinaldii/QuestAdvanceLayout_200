@@ -22,7 +22,7 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFF121212))
+            .background(Color(0xFF000080))
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {

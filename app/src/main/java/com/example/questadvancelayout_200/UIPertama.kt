@@ -16,3 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+@Composable
+fun ActivityPertama(modifier: Modifier = Modifier) {
+    Column(modifier = modifier)
+}

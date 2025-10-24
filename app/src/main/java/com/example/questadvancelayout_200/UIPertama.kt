@@ -61,6 +61,11 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
                     color = Color.White,
                     modifier = Modifier.padding(top = 15.dp)
                 )
+                Box(
+                    modifier = Modifier.fillMaxSize()
+                ) {
+
+                }
 
             }
 

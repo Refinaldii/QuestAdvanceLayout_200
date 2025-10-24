@@ -24,60 +24,62 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-    }
-    Text(
-        text = stringResource(id = R.string.prodi),
-        fontSize = 35.sp,
-        fontWeight = FontWeight.Bold
-    )
-    Text(
-        text = stringResource(id = R.string.univ),
-        fontSize = 22.sp
-    )
-    Spacer(modifier = Modifier.height(25.dp))
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(12.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = Color.DarkGray
+        Text(
+            text = stringResource(id = R.string.prodi),
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Bold
         )
-    )  {
-        Row {
-            val gambar = painterResource(id = R.drawable.ratatuli)
-            Image(
-                painter = gambar,
-                contentDescription = null,
-                modifier = Modifier
-                    .size(100.dp)
-                    .padding(5.dp)
+        Text(
+            text = stringResource(id = R.string.univ),
+            fontSize = 22.sp
+        )
+        Spacer(modifier = Modifier.height(25.dp))
+
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
             )
-            Spacer(modifier = Modifier.width(30.dp))
-            Column {
-                Text(
-                    text = stringResource(id = R.string.nama),
-                    fontSize = 30.sp,
-                    fontFamily = FontFamily.Cursive,
-                    color = Color.White,
-                    modifier = Modifier.padding(top = 15.dp)
+        ) {
+            Row {
+                val gambarProfil = painterResource(id = R.drawable.ratatuli)
+                Image(
+                    painter = gambarProfil,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(5.dp)
                 )
-                Box(
-                    modifier = Modifier.fillMaxSize()
-                ) {
+                Spacer(modifier = Modifier.width(30.dp))
+                Column {
                     Text(
-                        text = stringResource(id = R.string.copy),
-                        modifier = Modifier
-                            .align(Alignment.BottomCenter)
-                            .padding(bottom = 50.dp)
+                        text = stringResource(id = R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
                     )
-
+                    Text(
+                        text = stringResource(id = R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
                 }
-
             }
+        }
 
-            }
-
-
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                text = stringResource(id = R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
         }
     }
-
+}

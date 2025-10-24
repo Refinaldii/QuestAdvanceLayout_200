@@ -18,5 +18,11 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ActivityPertama(modifier: Modifier = Modifier) {
-    Column(modifier = modifier)
+    Column(
+        modifier = modifier
+            .padding(top = 100.dp)
+            .fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+    }
 }
